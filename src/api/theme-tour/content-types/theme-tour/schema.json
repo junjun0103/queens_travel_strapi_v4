@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "theme_tours",
+  "info": {
+    "singularName": "theme-tour",
+    "pluralName": "theme-tours",
+    "displayName": "theme_tours"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "title_cn": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "slogan_en": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "slogan_cn": {
+      "type": "string",
+      "required": true
+    },
+    "highlight_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "highlight_cn": {
+      "type": "richtext",
+      "required": true
+    },
+    "map": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "priceDetail_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "priceDetail_cn": {
+      "type": "richtext",
+      "required": true
+    },
+    "included_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "included_cn": {
+      "type": "richtext",
+      "required": true
+    },
+    "excluded_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "excluded_cn": {
+      "type": "richtext",
+      "required": true
+    },
+    "policy_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "policy_cn": {
+      "type": "richtext",
+      "required": true
+    },
+    "plans_en": {
+      "type": "component",
+      "repeatable": true,
+      "component": "daily-plans.daily-plan-en"
+    },
+    "plans_cn": {
+      "type": "component",
+      "repeatable": true,
+      "component": "daily-plans.daily-plans"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title_en",
+      "required": false
+    },
+    "background_img": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "subTitle_en": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "subTitle_cn": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    }
+  }
+}

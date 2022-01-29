@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_daily_plans_daily_plan_ens",
+  "info": {
+    "displayName": "daily-plan-en",
+    "icon": "angle-up",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "route": {
+      "type": "string",
+      "required": true
+    },
+    "stayAndMeals": {
+      "type": "richtext",
+      "required": true
+    },
+    "itinerary": {
+      "type": "richtext",
+      "required": true
+    },
+    "photo1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "photo2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

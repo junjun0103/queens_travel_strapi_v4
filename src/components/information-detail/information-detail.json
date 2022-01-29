@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_information_detail_information_details",
+  "info": {
+    "displayName": "information-detail",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

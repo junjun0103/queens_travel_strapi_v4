@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "itineraries",
+  "info": {
+    "singularName": "itinerary",
+    "pluralName": "itineraries",
+    "displayName": "itineraries",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_cn": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "slogan": {
+      "type": "string",
+      "required": true
+    },
+    "highlight": {
+      "type": "richtext",
+      "required": true
+    },
+    "map": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "priceDetail": {
+      "type": "richtext",
+      "required": true
+    },
+    "included": {
+      "type": "richtext",
+      "required": true
+    },
+    "excluded": {
+      "type": "richtext",
+      "required": true
+    },
+    "policy": {
+      "type": "richtext",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    },
+    "departureDay": {
+      "type": "string",
+      "required": true
+    },
+    "background_img": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "plans_en": {
+      "type": "component",
+      "repeatable": true,
+      "component": "daily-plans.daily-plan-en",
+      "required": true
+    },
+    "plans_cn": {
+      "type": "component",
+      "repeatable": true,
+      "component": "daily-plans.daily-plans",
+      "required": true
+    },
+    "title_en": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

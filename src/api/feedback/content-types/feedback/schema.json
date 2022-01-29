@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feedbacks",
+  "info": {
+    "singularName": "feedback",
+    "pluralName": "feedbacks",
+    "displayName": "feedbacks",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "title_cn": {
+      "type": "string",
+      "required": true
+    },
+    "name_en": {
+      "type": "string",
+      "required": true
+    },
+    "name_cn": {
+      "type": "string",
+      "required": true
+    },
+    "content_en": {
+      "type": "richtext",
+      "required": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "customTourFeedback": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "shortDescription_cn": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "shortDescription_en": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title_en",
+      "required": true
+    },
+    "content_cn": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
